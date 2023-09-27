@@ -39,6 +39,6 @@
 
 .post-exit-active {
     /* transform: translateX(-1900px); */
-    transform: translateY(+1900px);
+    transform: translateX(-500px);
     transition: all 500ms ease-in;
 }
