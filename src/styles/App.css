@@ -6,7 +6,8 @@
 
 #root {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .App {
@@ -20,12 +21,17 @@
     margin-top: 15px;
     justify-content: space-between;
     align-items: center;
+    border-radius: 3px;
 }
 
 .post-enter {
     transform: translateX(-1000px);
 
 
+}
+
+.post__btns {
+    display: flex;
 }
 
 .post-enter-active {
@@ -41,4 +47,38 @@
     /* transform: translateX(-1900px); */
     transform: translateX(-500px);
     transition: all 500ms ease-in;
+}
+
+.page__wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.page {
+    padding: 10px;
+    border: 1px solid teal;
+    cursor: pointer;
+}
+
+.page__current {
+    border: 3px solid lightcoral;
+    font-weight: bold;
+    border-radius: 3px;
+    background-color: antiquewhite;
+
+}
+
+.navbar {
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background-color: rgb(129, 179, 179);
+}
+
+.navbar__links {
+    margin-left: auto;
 }
