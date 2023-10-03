@@ -1,8 +1,8 @@
 #used libraries: 
 
-react
-react-transition-group 
-react-router-dom
+react | 
+react-transition-group | 
+react-router-dom | 
 axios
 
 
