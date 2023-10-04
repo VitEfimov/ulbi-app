@@ -86,26 +86,19 @@ const Posts = () => {
                 {value: 25, name: '25'},
                 {value: -1, name: 'All'}
             ]}
-            
-            
             />
-
-            
             {postError &&
                 <h1 style={{ textAlign: 'center' }}>Loading ${postError}!</h1>}
             <PostList remove={removePost} posts={sortedAndSerchedPosts} title='List of posts JS' />
-            <div ref={lastElement} style={{ height: 20, background: 'red' }} />
+            <div ref={lastElement} style={{ height: 20, background: 'teal' }} />
             {isPostLoading &&
                 <div style={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}><Loader /></div>
             }
-            <Pagination
+            {/* <Pagination
                 page={page}
                 changePage={changePage}
                 totalPages={totalPages}
-            />
-
-
-
+            /> */}
         </div>
     );
 
