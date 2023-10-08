@@ -90,7 +90,7 @@ const Posts = () => {
             {postError &&
                 <h1 style={{ textAlign: 'center' }}>Loading ${postError}!</h1>}
             <PostList remove={removePost} posts={sortedAndSerchedPosts} title='List of posts JS' />
-            <div ref={lastElement} style={{ height: 20, background: 'teal' }} />
+            <div ref={lastElement} style={{ height: 10, background: 'teal', opacity: '50%' }} />
             {isPostLoading &&
                 <div style={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}><Loader /></div>
             }
